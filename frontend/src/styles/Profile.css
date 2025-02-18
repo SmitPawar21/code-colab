@@ -1,0 +1,235 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background: linear-gradient(45deg, #161515, #001f3f, #007c94, #161515);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s infinite ease-in-out;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.profile-page h1 {
+    background: linear-gradient(90deg, #929292, #004e9c, #00d4ff, #929292);
+    background-size: 400% 100%; /* Expand gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+    animation: gradientAnimation 3s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.profile-container {
+  width: 70vw;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 0px 30px var(--primary-color);
+}
+
+/* Fixed profile header */
+.profile-header {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-image: url("../assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Left section of the header */
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Profile image */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-name {
+  font-size: 2vw;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+.profile-title {
+  font-size: 16px;
+  opacity: 0.8;
+  color: #ddd;
+  /* border: 1px solid red; */
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 20px;
+  color: white;
+  flex: 1;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 2vw;
+  background-color: black;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--secondary-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content:left;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: #b7b7b7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+.social-link svg {
+  margin-right: 5px;
+}
+
+.unique-code {
+  text-align: center;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin: 20px 0;
+  background-color: #353535;
+  padding: 1vh 2vw;
+  border: none;
+  border-radius: 20px;
+}
+
+.about-me {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.profile-container button {
+  width: 40%;
+  background-color: var(--primary-color);
+  padding: 2vh;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer ;
+  transition: all 0.5s ease;
+  font-size: 1.5vw;
+}
+
+.profile-container button:nth-child(1):hover {
+  background-color: var(--accent-color);
+  color: black;
+}
+.profile-container button:nth-child(2):hover {
+  background-color: red;
+}
+
+
+@media (max-width: 600px) {
+  .profile-container {
+      margin: 20px;
+  }
+
+  .profile-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .contact-info {
+      align-items: center;
+      padding: 0;
+  }
+
+  .social-links {
+      flex-direction: column;
+      align-items: center;
+  }
+}

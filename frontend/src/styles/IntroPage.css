@@ -13,10 +13,10 @@
   
   .header {
     background: #282c34b7;
-    background: radial-gradient(circle, rgba(109, 109, 109, 0.37), rgba(85, 85, 85, 0.658), rgb(0, 0, 0));
+    background: radial-gradient(circle,#009fbf99, #037389, #003742, #00252c, #161515);
     color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px; 
     height: 20vh;
     display: flex;
     justify-content: center;

@@ -1,0 +1,62 @@
+.intro-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url("../assets/bg_3.jpeg");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background: #282c34b7;
+    background: radial-gradient(circle, rgba(109, 109, 109, 0.37), rgba(85, 85, 85, 0.658), rgb(0, 0, 0));
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+  
+  .about,
+  .language-support {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .start-btn {
+    background: #2fbb00;
+    color: white;
+    padding: 2vh 5vw;
+  }
+  
+  .register-btn {
+    background: #007bff;
+    color: white;
+  }
+
+  button:hover {
+    background-color: rgb(34, 34, 34);
+  }

@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage';
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
+import IntroPage from './components/IntroPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<DashboardPage />} />
+          <Route path="/" element={<IntroPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/your-projects" element={<DashboardPage />} />

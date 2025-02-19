@@ -29,6 +29,7 @@
     padding: 8px 12px;
     border-radius: 6px;
     transition: background 0.3s ease;
+    background-color: transparent;
   }
   
   .navbar-links li:hover {
